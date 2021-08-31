@@ -53,7 +53,7 @@ export default {
       ]
     }
   },
-  async mounted() {
+  async fetch() {
     console.log(`id: ${this.$route.params.id}`)
     let docSnap = await this.$fire.firestore.collection("games").doc(this.$route.params.id).get()
     if (docSnap.exists) {
