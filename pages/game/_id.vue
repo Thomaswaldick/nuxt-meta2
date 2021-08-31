@@ -36,6 +36,26 @@ export default {
           content: 'website'
         },
         {
+          hid: 'twitter:card',
+          property: 'twitter:card',
+          content: 'summary'
+        },
+        {
+          hid: 'twitter:title',
+          property: 'twitter:title',
+          content: this.gameTitle
+        },
+        {
+          hid: 'twitter:description',
+          property: 'twitter:description',
+          content: this.gameDescription
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: this.gameImage
+        },
+        {
           hid: 'og:title',
           property: 'og:title',
           content: this.gameTitle
