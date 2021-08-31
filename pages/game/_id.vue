@@ -27,17 +27,17 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.game?.title
+          content: this.game.title || ""
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.game?.description
+          content: this.game.description || ""
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.game?.image
+          content: this.game.image || ""
         }
       ]
     }
