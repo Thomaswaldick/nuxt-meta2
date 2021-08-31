@@ -15,6 +15,17 @@ export default {
   data: () => ({
     game: null
   }),
+  computed: {
+    gameDescription() {
+      return this.game ? this.game.description : "Blank Description"
+    },
+    gameImage() {
+      return this.game ? this.game.image : "https://imageproxy.ifunny.co/crop:x-20,resize:640x,quality:90x75/images/9d2c4c299b4325e2d941d47d0a547e49de03619855033af6f7b279d805e00e46_1.jpg"
+    },
+    gameTitle() {
+      return this.game ? this.game.name : "Blank Title"
+    }
+  },
   head() {
     return {
       title: "Title?",
@@ -27,17 +38,17 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.game.title || ""
+          content: this.gameTitle
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.game.description || ""
+          content: this.gameDescription
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.game.image || ""
+          content: this.gameImage
         }
       ]
     }
