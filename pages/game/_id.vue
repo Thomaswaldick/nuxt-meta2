@@ -31,9 +31,9 @@ export default {
       title: "Title?",
       meta: [
         {
-          hid: 'description',
-          name: 'description',
-          content: 'Home page description'
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
         },
         {
           hid: 'og:title',
